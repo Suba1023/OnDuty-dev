@@ -1,14 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
-import Odform from './teacher/Odform';
+import {BrowserRouter} from 'react-router-dom'
+import BaseRouter from './router/Routes'
+
 
 function App() {
   return (
-    <div className="App">
-      <div>
-        <Odform/>
-      </div>
-    </div>
+    <BrowserRouter>
+    <BaseRouter />
+  </BrowserRouter>  
   );
 }
 

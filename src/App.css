@@ -18,3 +18,19 @@
   font-size:17px;
   font-weight:bold;
 }
+/* nav item */
+.navbar-dark .navbar-nav .nav-link{
+  color: rgb(241,196,15);
+}
+/* dropdown */
+.btn-primary{
+  background-color: none;
+  border-color: none;
+}
+.login{
+  background-color: rgb(85,0,0);
+  height: 1200px;
+  text-align: center;
+  color:rgb(241,196,15);
+  
+}

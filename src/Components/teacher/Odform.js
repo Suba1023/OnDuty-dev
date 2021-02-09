@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import {Container,Card,Form,Row,Col } from 'react-bootstrap'
-import '../App.css'
+import '../../App.css'
 
 export class Odform extends Component {
     constructor(props) {
@@ -26,7 +26,7 @@ export class Odform extends Component {
                 <Container>
                     <Card>
                     <nav className="nav" style={{height:"50px", backgroundColor:"rgb(85,0,0)"}}>
-                        <h4 className="headTitle" style={{height:"30%",color:"white",marginLeft:"40%",marginTop:"7px"}}>OnDuty Form</h4>
+                        <h4 className="headTitle" style={{height:"30%",color:"rgb(241,196,15)",marginLeft:"40%",marginTop:"7px"}}>OnDuty Form</h4>
                     </nav>
                     <Form>
                  
