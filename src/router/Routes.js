@@ -8,6 +8,8 @@ import TeacherLogout from '../Components/auth/TeacherLogout'
 import TeacherHeader from '../Components/teacher/Header'
 import AdminHeader from '../Components/admin/Header'
 import Odform from '../Components/teacher/Odform'
+import TeacherProfile from '../Components/teacher/TeacherProfile'
+
 
 
 export default function BaseRouter() {
@@ -28,7 +30,7 @@ export default function BaseRouter() {
         <Route path={`${url}/`} component={AdminLogin} exact />
         <Route path={`${url}`+ `/logout`} component={AdminLogout} />
         <Route path={`${url}`+`/manage_teacher`} >
-           <><AdminHeader /></>
+           <><AdminHeader /><TeacherProfile/></>
         </Route>
         <Route path={`${url}`+`admin_dashboard`} >
            <><AdminHeader /></>
