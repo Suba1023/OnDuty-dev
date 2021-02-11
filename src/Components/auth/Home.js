@@ -4,11 +4,16 @@ import {
     Row,
     Col,
     Button,
+    Card,
 } from 'react-bootstrap';
 import {
     Link,
 } from 'react-router-dom';
 import Logo from '../../holy-logo.png'
+import UserCard from '../Usercard/UserCard'
+import adminImg from '../Usercard/admin.png'
+import teacherImg from '../Usercard/Teacher-amico.png'
+import studentImg from '../Usercard/Exams-bro.png'
 
 export default function home() {
     const buttonStyle = {
@@ -52,9 +57,16 @@ export default function home() {
                     </div>
               </nav>
         <Row  className="justify-content-md-center">
-          <Link to="/admin"><button style={buttonStyle} >Admin Login</button></Link>
-          <Link to="/teacher"><button  style={buttonStyle}>Teacher Login</button></Link>
-
+          <Col lg={4} sm={12}>
+              <UserCard path="/admin" Text="Admin Login" Img={adminImg}/>
+          </Col>
+          <Col lg={4} sm={12}>
+              <UserCard path="/teacher" Text="Teacher Login" Img={teacherImg}/>
+          </Col>
+          <Col lg={4} sm={12}>
+              <UserCard path="/student" Text="Student Login" Img={studentImg}/>
+          </Col>
+          
         </Row> 
         </div>
            
